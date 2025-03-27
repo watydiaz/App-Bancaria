@@ -17,7 +17,6 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <!-- js -->
-    <script src="script.js"></script>
 </head>
 
 <body>
@@ -28,10 +27,10 @@
         <h1>Banco Pinilla</h1>
         <hr>
         <form action="controller.php" name="f1" method="post">
-            <table align="center" width="60%">
+            <table align="center" width="60%" border="1">
                 <tr>
                     <td colspan="4">
-                        <p>Hola Karol Diaz</p>
+                        <input class="btn-success" type="text" id="nomUser" name="nomUser" value="" readonly style="border: 1px;">
                     </td>
                     <td align="right">
                         <label for=""><h6>Contactos</h6></label><br>
@@ -46,7 +45,7 @@
                     <td colspan="5">
                         <center>
                             <h3>Cuenta de Ahorros</h3>
-                            <p>101234455698</p>
+                           <center> <input type="text" id="nCuenta" name="nCuenta" value="" readonly style="border: 1px;"></center><br>
                             Saldo: <br>
                             <button type="button" class="btn btn-success">
                                 <h3>$ 500.000</h3>
@@ -109,6 +108,10 @@
         </form>
     </div>
 
+    <script src="script.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
