@@ -7,23 +7,17 @@
     <title>Cajero Bancario</title>
     <link rel="stylesheet" href="styles.css">
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- Popper -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <!-- js -->
 </head>
 
 <body>
     <div class="container">
         <center>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5i7wcFkuCdIDE_aaU6fCso0DVBchwjNJxhQ&s"
-                alt="Logo" class="img-fluid" width="50px" height="200px">
+                alt="Logo" class="img-fluid" width="50px">
             <br>
             <h1>Banco Pinilla</h1>
         </center>
@@ -48,30 +42,6 @@
                                     alt="" width="20px" style="border-radius: 50%;">
                             </button>
                         </center>
-
-                        <!-- Modal de cuentas registradas -->
-                        <div class="modal fade" id="usuariosModal" tabindex="-1" role="dialog"
-                            aria-labelledby="usuariosModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="usuariosModalLabel">Cuentas Registradas</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <ul id="listaUsuarios" class="list-group">
-                                            <!-- Aquí se llenará la lista de usuarios dinámicamente -->
-                                        </ul>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-dismiss="modal">Cerrar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </td>
                 </tr>
                 <tr>
@@ -84,43 +54,7 @@
                                 <h3>$ <input type="text" name="saldo" id="saldo" readonly class="btn-success"
                                         style="border: none;"></h3>
                             </button><br><br>
-                        </center>
-
-                        <!-- Modal de transferencia -->
-                        <div class="modal fade" id="transferenciaModal" tabindex="-1" role="dialog"
-                            aria-labelledby="transferenciaModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="transferenciaModalLabel">Realizar Transferencia</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form id="transferenciaForm">
-                                            <div class="form-group">
-                                                <label for="destinatario">Destinatario</label>
-                                                <select id="destinatario" class="form-control">
-                                                    <!-- Opciones dinámicas generadas con JavaScript -->
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="monto">Monto</label>
-                                                <input type="number" id="monto" class="form-control"
-                                                    placeholder="Ingrese el monto a transferir">
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-dismiss="modal">Cancelar</button>
-                                        <button type="button" class="btn btn-primary"
-                                            id="confirmarTransferencia">Transferir</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        </center>                        
                     </td>
                 </tr>
                 <tr>
@@ -163,6 +97,7 @@
                         </center>
                     </td>
                     <td></td>
+                    <hr>
                 </tr>
                 <tr>
                     <td></td>
